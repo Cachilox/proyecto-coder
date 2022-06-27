@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+
+
+/* CUSTOM PROPERTIES */
+:root {
+  --primary: #111111;
+  --secondary: #d4c9c3;
+  --tertiary: #a64208;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: rgb(230, 230, 221);
+}
+
+.sub-header {
+  text-align: center;
+  font-size: 14px;
+  background-color: beige;
+}
+
+/* HEADER Y NAVBAR */
+span {
+  color: var(--tertiary);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  font-size: 20px;
+}
+
+.navbar .logo {
+  font-size: 3rem;
+  font-family: "Abril Fatface";
+  padding: 0 60px;
+  text-decoration: none;
+  color: var(--secondary);
+  animation: rubberBand 3s ease;
+  -webkit-animation: rubberBand 3s ease;
+}
+
+
+.navbar .menu {
+  display: flex;
+}
+
+.navbar .menu li {
+  list-style: none;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: var(--secondary);
+  cursor: pointer;
+  margin: 0 40px;
+}
+
+.navbar .menu a:hover {
+  border-bottom: 1px solid var(--tertiary);
+}
+
+.navbar .carrito {
+  margin-right: 100px;
+  font-size: 1.5rem;
+  color: var(--tertiary);
+}
+
+.navbar .menu-bar {
+  display: none;
+  color: var(--secondary);
+}
+/* FIN DE HEADER Y NAVBAR */
+
+/* HERO Y HOT SALE */
+.hero {
+  height: 90vh;
+  background-image: url("../img/ropa.webp");
+  background-size: cover;
+  display: flex;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Abril Fatface";
+  font-size: 6rem;
+  text-shadow: 0 0 5px;
+  font-weight: 100;
+  border: 1px solid rgb(167, 117, 60);
+  background-color: rgb(0, 0, 0, 0.8);
+  color: rgb(167, 117, 42);
+  letter-spacing: 3px;
+}
+/* FINAL DE HERO Y HOT SALE */
+
+/* CARDS */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #201e1e;
+  padding: 8px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+
+.card-header img {
+  max-width: 1200px;
+  width: 100%;
+  height: 28em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.card-header img:hover {
+  box-shadow: 5px 5px 20px rgba(116, 111, 111, 0.651);
+}
+
+.card-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.card-link {
+  background-color: var(--tertiary);
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card .price {
+  color: rgb(13, 236, 13);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.cards {
+  margin-top: 20px;
+}
+
+/* Final de cards */
+
+/* Seccion mercado pago */
+
+.pago {
+  margin-top: 20px;
+  min-width: 320px;
+}
+
+img {
+  width: 100%;
+}
+/* Final de seccion*/
+
+/* FOOTER */
+.footer {
+  background-color: #201e1e;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.footer .logo-footer {
+  color: #cec0b8;
+  font-family: "Abril Fatface";
+  font-size: 4rem;
+  margin-left: 3rem;
+  text-decoration: none;
+}
+
+.footer .pagos {
+  width: 9rem;
+  margin-right: 16rem;
+}
+
+.end-footer {
+  text-align: center;
+  background-color: #f3f9f7;
+  color: #111111;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+/* Final de footer */
+
+/* Sección de Productos */
+
+h2 {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 2.5rem;
+  color: var(--tertiary);
+  text-shadow: 2px 2px 2px #CE5937;
+}
+
+
+.footer {
+  margin-top: 20px;
+}
+/* Final de sección */
+
+
+/* Contacto */
+
+.content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.contact-wrapper {
+  box-shadow: 10px 11px 4px 0px rgba(0,0,0,0.66);
+  -webkit-box-shadow: 10px 11px 4px 0px rgba(0,0,0,0.66);
+-moz-box-shadow: 10px 11px 4px 0px rgba(0,0,0,0.66);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background-color: #201e1e;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+  grid-column: 1/3;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.contact-form form button {
+  background-color: var(--tertiary);
+  border: 0;
+  margin-top: 1em;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background-color: chocolate;
+  color: var(--secondary);
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  outline: 0;
+  cursor: pointer;
+}
+
+.contact-info {
+  background-color: var(--primary);
+  color: white;
+}
+ 
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact-info ul i {
+  margin-top: 15px;
+  font-size: 14px;
+  display: block;
+}
+
+.contact-info ul {
+  padding-top: .3em;
+}
+/* Final de contacto */
+
+/* Políticas de devolución */
+
+.devolucion {
+  max-width: 1200px;
+  width: 100%;
+  padding: 45px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.devolucion .h3 {
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.devolucion .paragraph {
+  margin-top: 10px;
+  padding-top: 4px;
+}
+
+/* Final de devolución */
+
+/* Local */
+
+.container-map iframe {
+  width: 100%;
+  height: 70vh;
+
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1240px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .hero {
+    background-position: 50%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar .menu a {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar .menu a {
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar .menu a {
+    display: none;
+  }
+  .navbar .menu-bar {
+    display: inline-block;
+    margin-right: 130px;
+    font-size: 2rem;
+  }
+  .footer .pagos {
+    margin-right: 5rem;
+  }
+
+}
+
+@media screen and (min-width: 813px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar .logo {
+    padding: 0 20px;
+  }
+  .navbar .menu-bar {
+    display: inline-block;
+    margin-right: 90px;
+    font-size: 2rem;
+  }
+  .navbar .carrito {
+    margin-right: 30px;
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer .logo-footer {
+    margin-right: 6rem;
+  }
+  .footer .pagos {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .navbar .logo {
+    font-size: 2.5rem;
+  }
+  .navbar .menu-bar {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .devolucion .h3 {
+    font-size: 2rem;
+  }
+  .end-footer {
+    font-size: .8em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .navbar .logo {
+    padding: 0 5px;
+  }
+  .navbar .carrito {
+    margin-right: 10px;
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .devolucion .h3 {
+    font-size: 1.8rem;
+  }
+}
