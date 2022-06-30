@@ -15,8 +15,8 @@
 }
 
 body {
-  font-family: "Oswald", sans-serif;
-  background-color: rgb(230, 230, 221);
+  font-family: "Oswald", 'PT Serif', serif;
+  background-color: rgb(238, 238, 227);
 }
 
 .sub-header {
@@ -49,7 +49,7 @@ span {
 
 .navbar .logo {
   font-size: 3rem;
-  font-family: "Abril Fatface";
+  font-family: 'Abril Fatface', 'PT Serif', serif;
   padding: 0 60px;
   text-decoration: none;
   color: var(--secondary);
@@ -101,7 +101,7 @@ span {
 }
 
 h1 {
-  font-family: "Abril Fatface";
+  font-family: 'Abril Fatface', 'PT Serif', serif;
   font-size: 6rem;
   text-shadow: 0 0 5px;
   font-weight: 100;
@@ -123,6 +123,7 @@ h1 {
   background-color: #201e1e;
   padding: 8px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
 }
 
 
@@ -187,7 +188,7 @@ h1 {
 /* Seccion mercado pago */
 
 .pago {
-  margin-top: 20px;
+  margin-top: 20px;  /* 20 */
   min-width: 320px;
 }
 
@@ -203,11 +204,12 @@ img {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+  /* margin-top: 20px;   */
 }
 
 .footer .logo-footer {
   color: #cec0b8;
-  font-family: "Abril Fatface";
+  font-family: 'Abril Fatface', 'PT Serif', serif;
   font-size: 4rem;
   margin-left: 3rem;
   text-decoration: none;
@@ -240,9 +242,7 @@ h2 {
 }
 
 
-.footer {
-  margin-top: 20px;
-}
+
 /* Final de sección */
 
 
@@ -337,6 +337,10 @@ h2 {
 .contact-info ul {
   padding-top: .3em;
 }
+
+label {
+  color: var(--secondary);
+}
 /* Final de contacto */
 
 /* Políticas de devolución */
@@ -379,12 +383,6 @@ h2 {
 @media screen and (max-width: 1240px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  .hero {
-    background-position: 50%;
   }
 }
 
@@ -461,8 +459,10 @@ h2 {
   .card-grid {
     grid-template-columns: 1fr;
   }
+  .sub-header {
+    font-size: 12px;
+  }
 }
-
 
 @media screen and (max-width: 450px) {
   .navbar .logo {
