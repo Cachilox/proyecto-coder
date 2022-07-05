@@ -5,61 +5,139 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../assets/css/style.css" />
+        <title>Devolución</title>
         <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" />
-        <!-- FONT AWESOME -->
-        <script src="https://kit.fontawesome.com/5d6d433a49.js" crossorigin="anonymous"></script>
-        <!-- ANIMATION CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <title>Devolución</title />
+        <link rel="stylesheet" href="../assets/css/style.css" />
     </head>
 
     <body>
-        <h4 class="sub-header">DEMORA EN EL ARMADO 48/72 HS. HÁBILES. ÚNICA CONDICIÓN DE COMPRA MÍNIMO $10.000</h4>
-        <!-- HEADER Y NAV-BAR -->
-        <header class="header">
-            <nav class="navbar">
-                <a class="logo" href="../index.html">CLOXS</a>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./devolucion.html"><span>Devolución</span></a></li>
-                    <li><a href="./local.html">Local</a></li>
-                </ul>
-                <div class="menu-bar">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <div class="carrito">
-                    <i class="fa-solid fa-cart-shopping"></i>
+        <!-- NAVBAR -->
+        <header>
+            <h5 class="sub-header">DEMORA EN EL ARMADO 48/72 HS. HÁBILES. ÚNICA CONDICIÓN DE COMPRA MÍNIMO $6000</h5>
+            <nav class="navbar navbar-expand-md bg-red">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">CLOXS</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav m-auto fw-bold">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./devolucion.html"><span>Devolución</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./local.html">Local</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
                 </div>
             </nav>
         </header>
-        <!-- FINAL DEL HEADER Y NAV-BAR -->
+        <!-- END NAVBAR -->
 
-        <!-- Contenido principal -->
         <main>
-            <div class="devolucion">
-                <h3 class="animate__animated animate__fadeInDownBig h3">Políticas de devolución</h3>
-                <p class="paragraph">Si no estás conforme con nuestro producto, puedes realizar un cambio del mismo de
-                    alguna de las siguientes formas:</p>
-                <p class="paragraph">1. En cualquiera de nuestras tiendas podrás cambiarlo por un producto del mismo valor
-                </p>
-                <p class="paragraph">2. Desde tu domicilio. Para eso ponete en contacto a benkashop@gmail.com y nosotros nos
-                    pondremos en contacto con vos para resolverlo.</p>
-                <p class="paragraph">Las devoluciones sólo pueden ser realizadas durante los 30 días siguientes a la compra.
-                </p>
+            <div class="container">
+                <div class="row devolucion">
+                    <h2 class="animate__animated animate__backInRight">Políticas de devolución</h2>
+                    <p class="paragraph text-center">Si no estás conforme con nuestro producto, puedes realizar un cambio
+                        del mismo
+                        de alguna de las siguientes formas:
+                    </p>
+                    <p class="paragraph text-center">1. En cualquiera de nuestras tiendas podrás cambiarlo por un
+                        producto del mismo valor
+                    </p>
+                    <p class="paragraph text-center">2. Desde tu domicilio. Para eso ponete en contacto a cloxs@gmail.com y
+                        nosotros nos
+                        pondremos en contacto con vos para resolverlo.
+                    </p>
+                    <p class="paragraph text-center">Las devoluciones sólo pueden ser realizadas durante los 30 días
+                        siguientes a la compra.
+                    </p>
+                </div>
+                <h3 class="mt-5 text-center">PREGUNTAS FRECUENTES</h3>
+                <div class="accordion mt-4" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿NECESITO ESTAR REGISTRADO PARA HACER UNA COMPRA?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            No es necesario registrarse para comprar en nuestro sitio. También puede hacerlo completando todos los datos solicitados en el momento de la compra.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿ES SEGURO PONER MIS DATOS?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Sí. Tus datos personales y contenido de tú pedido NO serán compartidos ni divulgados bajo ningún concepto.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿HACEN ENVÍOS A TODO EL PAÍS?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Sí, claro. Si no tenés la posibilidad de acercarte a cualquiera de nuestros locales a retirar tú compra no te desanimes, podemos enviártelo a cualquier parte del país.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </main>
-        <!-- final de contenido principal -->
 
         <!-- FOOTER -->
-        <footer class="footer">
-            <a href="../index.html" class="logo-footer">CLOXS</a>
-            <img src="../assets/img/pagos.png" class="pagos" alt="Forma de pagos">
+        <footer class="mt-5 bg-dark">
+            <div class="container footer">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 p-4 text-sm-center text-md-start">
+                        <h6>NAVEGACION</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="../index.html" class="text-decoration-none">Inicio</a></li>
+                            <li><a href="./productos.html" class="text-decoration-none">Productos</a></li>
+                            <li><a href="./contacto.html" class="text-decoration-none">Contacto</a></li>
+                            <li><a href="./devolucion.html" class="text-decoration-none">Devolución</a></li>
+                            <li><a href="./local.html" class="text-decoration-none">Local</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="../assets/img/pagos.png" alt="forma de pagos" width="260" height="260">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <h6 class="mt-4 mx-5">FORMA DE ENVÍO</h6>
+                        <img src="../assets/img/oca.png" alt="forma de envio" class="mt-3 pb-2 oca">
+                      </div>
+                </div>
+            </div>
+            <h5 class="sub-header">Copyright CLOXS - 2022. Todos los derechos reservados</h5>
         </footer>
-        <h3 class="end-footer">Copyright CLOXS - 2022. Todos los derechos reservados</h3>
-        <!-- END FOOTER -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 
 </html>

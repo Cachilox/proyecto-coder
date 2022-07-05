@@ -1,564 +1,212 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
-
 /* CUSTOM PROPERTIES */
 :root {
-  --primary: #111111;
-  --secondary: #d4c9c3;
-  --tertiary: #a64208;
+    --primaryColor: #111;
+    --secundaryColor: #913e0e;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
- font-family: "Oswald", "PT Serif", serif;
- background: #B87612;
- background: -webkit-linear-gradient(top, #B87612, #F4B352);
- background: -moz-linear-gradient(top, #B87612, #F4B352);
- background: linear-gradient(to bottom, #B87612, #F4B352);
+    font-family: 'Oswald', sans-serif;
+    background: #B87612;
+    background: -webkit-linear-gradient(top, #B87612, #F4B352);
+    background: -moz-linear-gradient(top, #B87612, #F4B352);
+    background: linear-gradient(to bottom, #B87612, #F4B352);
 }
 
-
+/* NAVBAR */
 .sub-header {
-  text-align: center;
-  font-size: 14px;
-  background-color: beige;
+    background-color: var(--primaryColor);
+    color: #fff;
+    padding: .3rem;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1rem;
+    margin: 0;
 }
 
-/* HEADER Y NAVBAR */
 span {
-  color: var(--tertiary);
+    color: var(--primaryColor);
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+.navbar .navbar-brand {
+    font-size: 2.3rem;
+    color: var(--primaryColor);
+    animation: heartBeat 2s 2;
+    -webkit-animation: heartBeat 2s 2;
 }
 
-.navbar {
-  width: 100%;
-  background-color: var(--primary);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4rem;
-  font-size: 20px;
+.container .navbar-toggler {
+    background-color: rgb(126, 112, 112);
 }
 
-.navbar .logo {
-  font-size: 3rem;
-  font-family: "Abril Fatface", "PT Serif", serif;
-  padding: 0 60px;
-  text-decoration: none;
-  color: var(--secondary);
-  animation: rubberBand 3s 2s ease;
-  -webkit-animation: rubberBand 3s 2s ease;
+.bg-red {
+    background-color: var(--secundaryColor);
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 5px 6px 15px 1px rgba(17,17,17,0.49);
 }
 
-.navbar .menu {
-  display: flex;
+.bg-red a {
+    color: rgb(224, 207, 207);
+    font-size: 1.2rem;
+    transition: color, transform .3s;
+    -webkit-transition: color, transform .3s;
+    -moz-transition: color, transform .3s;
+    -ms-transition: color, transform .3s;
+    -o-transition: color, transform .3s;
 }
 
-.navbar .menu li {
-  list-style: none;
+.bg-red a:hover {
+    color: #177433;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
 }
 
-.navbar .menu a {
-  text-decoration: none;
-  color: var(--secondary);
-  cursor: pointer;
-  margin: 0 40px;
+.nav-item .nav-link {
+    margin: 0 10px;
 }
 
-.navbar .menu a:hover {
-  border-bottom: 1px solid var(--tertiary);
+.bi {
+    font-size: 1.6rem;
+    color: var(--primaryColor);
 }
+/* END NAVBAR */
 
-.navbar .carrito {
-  margin-right: 100px;
-  font-size: 1.5rem;
-  color: var(--tertiary);
-  animation: tada 2s 3 ;
-  -webkit-animation: tada 2s 3 ;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
-}
-
-.navbar .menu-bar {
-  display: none;
-  color: var(--secondary);
-}
-/* FIN DE HEADER Y NAVBAR */
-
-/* HERO Y HOT SALE */
-.hero {
-  height: 90vh;
-  background-image: url("../img/ropa.webp");
-  background-size: cover;
-  display: flex;
-  background-attachment: fixed;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-family: "Abril Fatface", "PT Serif", serif;
-  font-size: 6rem;
-  text-shadow: 0 0 5px;
-  font-weight: 100;
-  border: 1px solid rgb(167, 117, 60);
-  background-color: rgb(0, 0, 0, 0.8);
-  color: #a7752a;
-  letter-spacing: 3px;
-  animation: titleScale 2s 1s ease-in-out forwards;
-  -webkit-animation: titleScale 2s 1s ease-in-out forwards;
-}
-
-@keyframes titleScale {
-  0% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-  20% {
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -o-transform: scale(1.3);
-  }
-  40% {
-    transform: scale(1.6);
-    -webkit-transform: scale(1.6);
-    -moz-transform: scale(1.6);
-    -ms-transform: scale(1.6);
-    -o-transform: scale(1.6);
-  }
-  60% {
-    transform: scale(1.7);
-    -webkit-transform: scale(1.7);
-    -moz-transform: scale(1.7);
-    -ms-transform: scale(1.7);
-    -o-transform: scale(1.7);
-  }
-  100% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-}
-}
-
-/* FINAL DE HERO Y HOT SALE */
 
 /* CARDS */
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.card-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--primaryColor);
+    font-weight: 600;
 }
 
-.card {
-  background-color: #292822; /* #201e1e */
-  padding: 8px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  margin-bottom: 10px;
-  transition: transform 0.3s;
-  -webkit-transition: transform 0.3s;
-  -moz-transition: transform 0.3s;
-  -ms-transition: transform 0.3s;
-  -o-transition: transform 0.3s;
+.col-sm-12 .card {
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -ms-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
 }
 
 .card:hover {
-  transform: translateY(-15px);
-  -webkit-transform: translateY(-15px);
-  -moz-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
-  -o-transform: translateY(-15px);
+    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
 }
 
-.card-header img {
-  max-width: 1200px;
-  width: 100%;
-  height: 28em;
-  margin-bottom: 20px;
-  cursor: pointer;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+.effect {
+    transition: box-shadow 0.3s;
+    -webkit-transition: box-shadow 0.3s;
+    -moz-transition: box-shadow 0.3s;
+    -ms-transition: box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
 }
 
-.card-header img:hover {
-  box-shadow: 5px 5px 20px rgba(116, 111, 111, 0.651);
+.effect:hover {
+    box-shadow: 0 25px 50px -12px rgb(0, 0, 0, 0.5);
 }
-
-.card-title {
-  margin-bottom: 1.2rem;
-  font-size: 2rem;
-  text-align: center;
-  color: var(--secondary);
-  animation-name: cambiarColor;
-  animation-duration: 4s;
-}
-
-/* @keyframes cambiarColor {
-  0% {
-    color: #a64208;
-  }
-  100% {
-    color: wheat;
-  }
-} */
-
-.card-link {
-  background-color: var(--tertiary);
-  color: #fff;
-  width: 100%;
-  display: inline-block;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.card .price {
-  color: rgb(13, 236, 13);
-  text-align: center;
-  font-size: 2rem;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-}
-
-.cards {
-  margin-top: 20px;
-}
-
-/* Final de cards */
-
-/* Seccion mercado pago */
 
 .pago {
-  margin-top: 20px;
-  min-width: 320px;
+    margin-top: 30px;
+    min-width: 320px;
 }
-
-img {
-  width: 100%;
+  
+.pago .mercado {
+    width: 100%;
 }
-/* Final de seccion*/
 
 /* FOOTER */
 .footer {
-  background-color: #201e1e;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-  /* margin-top: 20px;   */
+    color: rgb(189, 153, 36); 
 }
 
-.footer .logo-footer {
-  color: #cec0b8;
-  font-family: "Abril Fatface", "PT Serif", serif;
-  font-size: 4rem;
-  margin-left: 3rem;
-  text-decoration: none;
+h6 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
-.footer .pagos {
-  width: 9rem;
-  margin-right: 16rem;
+.col-sm-12 .list-unstyled {
+    line-height: 2.2rem;
+    list-style: none;
+    
 }
 
-.end-footer {
-  text-align: center;
-  background-color: #f3f9f7;
-  color: #111111;
-  font-size: 1rem;
-  text-align: left;
+.list-unstyled li a {
+    color: #ffffff;
 }
 
-/* Final de footer */
+.col-sm-12 .oca {
+    margin-left: 4rem;
+}
+/* END FOOTER */
 
-/* Sección de Productos */
+/* PRODUCTOS */
+h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
 
-.titulo {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 2px 2px 2px #1a1219bd;
+.price {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: rgb(44, 155, 44);
+}
+
+/* CONTACTO */
+
+.contact .bi {
+    margin-left: 60px;
 }
 
 
-/* Final de sección */
-
-/* Contacto */
-
-.content {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
+.form .btn-success {
+    width: 10rem;
+    text-transform: uppercase;
 }
 
-.contact-wrapper {
-  box-shadow: 10px 11px 4px 0px rgba(0, 0, 0, 0.66);
-  -webkit-box-shadow: 10px 11px 4px 0px rgba(0, 0, 0, 0.66);
-  -moz-box-shadow: 10px 11px 4px 0px rgba(0, 0, 0, 0.66);
+/* Devolucion */
+
+.devolucion h2 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    padding: 10px;
+    color: var(--primaryColor);
 }
-
-.contact-wrapper > * {
-  padding: 1em;
-}
-
-.contact-form {
-  background-color: #201e1e;
-}
-
-.contact-form form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.contact-form form .block {
-  grid-column: 1/3;
-}
-
-.contact-form form p {
-  margin: 0;
-  padding: 1em;
-}
-
-.contact-form form button,
-.contact-form form input,
-.contact-form form textarea {
-  width: 100%;
-  padding: 0.7em;
-  border: none;
-  background: none;
-  outline: 0;
-  border-bottom: 1px solid var(--secondary);
-}
-
-.contact-form form button {
-  background-color: var(--tertiary);
-  border: 0;
-  margin-top: 1em;
-  text-transform: uppercase;
-  padding: 1em;
-}
-
-.contact-form form button:hover,
-.contact-form form button:focus {
-  background-color: chocolate;
-  color: var(--secondary);
-  transition: background-color 1s;
-  -webkit-transition: background-color 1s;
-  -moz-transition: background-color 1s;
-  -ms-transition: background-color 1s;
-  -o-transition: background-color 1s;
-  outline: 0;
-  cursor: pointer;
-}
-
-.contact-info {
-  background-color: var(--primary);
-  color: white;
-}
-
-.contact-info h4,
-.contact-info ul,
-.contact-info p {
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-
-.contact-info ul i {
-  margin-top: 15px;
-  font-size: 14px;
-  display: block;
-}
-
-.contact-info ul {
-  padding-top: 0.3em;
-}
-
-label {
-  color: var(--secondary);
-}
-/* Final de contacto */
-
-/* Políticas de devolución */
-
-.devolucion {
-  max-width: 1200px;
-  width: 100%;
-  padding: 45px 20px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.devolucion .h3 {
-  font-size: 2.5rem;
-  margin-top: 2.5rem;
-  padding: 10px;
-}
-
+  
 .devolucion .paragraph {
-  margin-top: 10px;
-  padding-top: 4px;
-}
-
-/* Final de devolución */
-
-/* Local */
-
-.container-map iframe {
-  width: 100%;
-  height: 70vh;
+    margin-top: 10px;
+    padding-top: 4px;
+    font-size: 1.3rem;
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1240px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media screen and (max-width: 700px) {
+    .carousel-inner .ropa {
+        height: 500px;
+    }
 }
 
-@media screen and (max-width: 1100px) {
-  .navbar .menu a {
-    margin: 0 20px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .navbar .menu a {
-    margin: 0 15px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .navbar .menu a {
-    display: none;
-  }
-  .navbar .menu-bar {
-    display: inline-block;
-    margin-right: 130px;
-    font-size: 2rem;
-  }
-  .footer .pagos {
-    margin-right: 5rem;
-  }
-}
-
-@media screen and (min-width: 813px) {
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-  .contact-wrapper > * {
-    padding: 2em;
-  }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
-    padding: 1em;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .navbar .logo {
-    padding: 0 20px;
-  }
-  .navbar .menu-bar {
-    display: inline-block;
-    margin-right: 90px;
-    font-size: 2rem;
-  }
-  .navbar .carrito {
-    margin-right: 30px;
-    font-size: 2rem;
-  }
-  h1 {
-    font-size: 5rem;
-  }
-  .footer {
-    grid-template-columns: 1fr;
-  }
-  .footer .logo-footer {
-    margin-right: 6rem;
-  }
-  .footer .pagos {
-    margin-right: 2rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-  .sub-header {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .navbar .logo {
-    font-size: 2.5rem;
-  }
-  .navbar .menu-bar {
-    display: inline-block;
-    margin-right: 50px;
-    font-size: 2rem;
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  .devolucion .h3 {
-    font-size: 2rem;
-  }
-  .end-footer {
-    font-size: 0.8em;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .navbar .logo {
-    padding: 0 5px;
-  }
-  .navbar .carrito {
-    margin-right: 10px;
-    font-size: 2rem;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  .devolucion .h3 {
-    font-size: 1.8rem;
-  }
+@media screen and (max-width: 560px) {
+    .carousel-inner .ropa {
+        height: 300px;
+    }
 }
