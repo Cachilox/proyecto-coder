@@ -1,0 +1,45 @@
+.sub-header {
+    @include measures($whiteColor, 0.9em, 500, center, 0 );
+    background-color: $primaryColor;
+    padding: 0.3rem;
+    margin: 0;
+}
+.bg-red {
+    background-color: $secundaryColor;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+
+    a {
+        color: $whiteColor;
+        font-size: 1.2rem;
+        transition: all 0.3s;
+    
+        &:hover {
+            color: $lightblack;
+            transform: scale(0.92);
+        }
+    }
+}
+span {
+    color: $primaryColor;
+}
+.navbar {
+    h1 {
+        font-size: 2em;
+        color: $primaryColor;
+        animation: heartBeat 2s 2;
+    }
+}
+.bi {
+    font-size: 1.6rem;
+    color: $primaryColor;
+}
+//CAROUSEL
+.slide {
+    width: 100%;
+    height: auto;
+    img {
+        width: 100%;
+        width: auto;
+    }
+}

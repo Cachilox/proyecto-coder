@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none; }
+
+body {
+  font-family: "Oswald", sans-serif;
+  background: #b87612;
+  background: -webkit-linear-gradient(top, #b87612, #f4b352);
+  background: -moz-linear-gradient(top, #b87612, #f4b352);
+  background: linear-gradient(to bottom, #b87612, #f4b352);
+  font-size: 15px; }
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.h2-base, h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #111;
+  margin-top: 30px; }
+
+.fa-instagram {
+  color: #c92d8f;
+  margin: 20px 10px;
+  text-decoration: none;
+  font-size: 2em; }
+  .fa-instagram:nth-child(1):hover {
+    color: #ce198c; }
+  .fa-instagram:nth-child(2):hover {
+    color: #2182cc; }
+
+.fa-twitter {
+  color: #55acee;
+  margin: 20px 10px;
+  text-decoration: none;
+  font-size: 2em; }
+  .fa-twitter:nth-child(1):hover {
+    color: #ce198c; }
+  .fa-twitter:nth-child(2):hover {
+    color: #2182cc; }
+
+.fa-facebook {
+  color: #0F91F3;
+  margin: 20px 10px;
+  text-decoration: none;
+  font-size: 2em; }
+  .fa-facebook:nth-child(1):hover {
+    color: #ce198c; }
+  .fa-facebook:nth-child(2):hover {
+    color: #2182cc; }
+
+.sub-header {
+  color: #e9dede;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0;
+  background-color: #111;
+  padding: 0.3rem;
+  margin: 0; }
+
+.bg-red {
+  background-color: #c45f24dc;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif; }
+  .bg-red a {
+    color: #e9dede;
+    font-size: 1.2rem;
+    transition: all 0.3s; }
+    .bg-red a:hover {
+      color: #3a2020c4;
+      transform: scale(0.92); }
+
+span {
+  color: #111; }
+
+.navbar h1 {
+  font-size: 2em;
+  color: #111;
+  animation: heartBeat 2s 2; }
+
+.bi {
+  font-size: 1.6rem;
+  color: #111; }
+
+.slide {
+  width: 100%;
+  height: auto; }
+  .slide img {
+    width: 100%;
+    width: auto; }
+
+.card-title {
+  color: #111;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5px; }
+
+.card {
+  transition: transform 0.4s;
+  cursor: pointer;
+  box-shadow: 5px 6px 15px 1px rgba(17, 17, 17, 0.3); }
+  .card:hover {
+    transform: translateY(-15px); }
+  .card .effect {
+    transition: box-shadow 0.3s;
+    position: relative; }
+  .card .off {
+    position: absolute;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    width: 3.5rem;
+    top: 0;
+    border-radius: 50%; }
+
+.mercado {
+  margin-top: 30px;
+  min-width: 320px; }
+  .mercado__pago {
+    width: 100%; }
+
+.footer {
+  background-color: #221f1f;
+  color: #ddd1dd;
+  padding: 50px 20px;
+  margin-top: 30px; }
+  .footer__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5em; }
+    @media screen and (max-width: 925px) {
+      .footer__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3em; } }
+    @media screen and (max-width: 560px) {
+      .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 3em; } }
+    .footer__grid-list {
+      margin-top: 20px; }
+      .footer__grid-list li {
+        margin: 10px 0; }
+      .footer__grid-list a {
+        color: #e9dede;
+        text-decoration: none;
+        transition: color .3s;
+        font-size: 1.3em; }
+        .footer__grid-list a:hover {
+          color: #2c9b2c; }
+  .footer .pagos {
+    width: 200px;
+    height: 260px;
+    margin-top: 10px; }
+  .footer .oca {
+    margin-top: 20px; }
+
+.bi {
+  margin-left: 60px; }
+
+.btn-base, .btn-success {
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #e9dede;
+  font-size: 1.4em;
+  transition: all 0.4s; }
+  .btn-base:hover, .btn-success:hover {
+    opacity: 0.9;
+    font-weight: 800; }
+
+.btn-success {
+  width: 200px;
+  text-transform: uppercase; }
+
+.devolucion .paragraph {
+  margin-top: 10px;
+  padding-top: 4px;
+  font-size: 1.3rem; }
+
+.left {
+  animation: left 1s;
+  transition: transform 1000ms; }
+
+@keyframes left {
+  to {
+    transform: translateX(0px); }
+  from {
+    transform: translateX(500px); } }
+
+.price {
+  color: #2c9b2c;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem; }

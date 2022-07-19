@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+  
+body {
+    font-family: "Oswald", sans-serif;
+    background: #b87612;
+    background: -webkit-linear-gradient(top, #b87612, #f4b352);
+    background: -moz-linear-gradient(top, #b87612, #f4b352);
+    background: linear-gradient(to bottom, #b87612, #f4b352);
+    font-size: 15px;
+}
+  
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.h2-base {
+    font-size: 2.5rem;
+    text-align: center;
+    color: $primaryColor;
+    margin-top: 30px;
+  }
+h2 {
+    @extend .h2-base;
+}
+
+$redesSociales: (
+    instagram: #c92d8f,
+    twitter: #55acee,
+    facebook: #0F91F3,
+);
+
+@each $nombre, $color in $redesSociales {
+    .fa-#{$nombre} {
+        color: $color;
+        margin: 20px 10px;
+        text-decoration: none;
+        font-size: 2em;
+
+        &:nth-child(1):hover {
+            color: #ce198c;
+        }
+        &:nth-child(2):hover {
+            color: #2182cc;
+        }
+    }
+}
+
+@mixin measures($color, $fontsize, $weight, $aling, $margin) {
+    color: $color;
+    font-size: $fontsize;
+    font-weight: $weight;
+    text-align: $aling;
+    margin-top: $margin;
+}

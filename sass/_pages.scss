@@ -1,0 +1,53 @@
+// CONTACTO
+.bi {
+  margin-left: 60px;
+}
+
+.btn-base {
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: $whiteColor;
+  font-size: 1.4em;
+  transition: all 0.4s;
+
+  &:hover {
+    opacity: 0.9;
+    font-weight: 800;
+  }
+}
+
+.btn-success {
+  @extend .btn-base;
+  width: 200px;
+  text-transform: uppercase;
+}
+
+// DEVOLUCIÓN
+.devolucion {
+
+  .paragraph {
+    margin-top: 10px;
+    padding-top: 4px;
+    font-size: 1.3rem;
+  }
+}
+
+.left {
+  animation: left 1s;
+  transition: transform 1000ms;
+}
+
+@keyframes left {
+  to {
+    transform: translateX(0px);
+  }
+  from {
+    transform: translateX(500px);
+  }
+}
+
+// PRODUCTOS
+
+.price {
+  @include measures ($terciaryColor, 1.5em, 600, center, 1rem)
+}

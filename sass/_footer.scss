@@ -1,0 +1,54 @@
+@import 'media-queries';
+.footer {
+    background-color: #221f1f;
+    color: #ddd1dd;
+    padding: 50px 20px;
+    margin-top: 30px;
+
+    @mixin grid( $columnas, $espacio) {
+        display: grid;
+        grid-template-columns: repeat( $columnas, 1fr);
+        gap: $espacio;
+
+        @media screen and (max-width: 925px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 3em;
+        }
+        @media screen and (max-width: 560px) {
+            grid-template-columns: 1fr;
+            gap: 3em;
+        }
+    }
+
+    &__grid {
+        @include grid(4, 5em );
+    
+        &-list {
+            margin-top: 20px;
+        
+            li {
+                margin: 10px 0;
+            }
+
+            a {
+                color: $whiteColor;
+                text-decoration: none;
+                transition: color .3s;
+                font-size: 1.3em;
+            
+                &:hover {
+                    color: $terciaryColor;
+                }
+            }
+        }
+    }
+    .pagos {
+        width: 200px;
+        height: 260px;
+        margin-top: 10px;
+    }
+      
+    .oca {
+        margin-top: 20px;
+    }    
+}
