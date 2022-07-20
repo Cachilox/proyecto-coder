@@ -8,10 +8,9 @@
   
 body {
     font-family: "Oswald", sans-serif;
-    background: #b87612;
-    background: -webkit-linear-gradient(top, #b87612, #f4b352);
-    background: -moz-linear-gradient(top, #b87612, #f4b352);
-    background: linear-gradient(to bottom, #b87612, #f4b352);
+    background-image: url('../assets/img/cool-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     font-size: 15px;
 }
   
