@@ -4,8 +4,8 @@
 .card {
     transition: transform 0.4s;
     cursor: pointer;
-    box-shadow: 5px 6px 15px 1px rgba(17, 17, 17, 0.30);
-
+    box-shadow: $Boxshadow;
+    
     &:hover {
         transform: translateY(-15px);
     }
@@ -21,7 +21,18 @@
         padding: 9px;
         width: 3.5rem;
         top: 0;
+        right: 0;
         border-radius: 50%;
+    }
+    .heart {
+        background-image: url('../assets/img/heart.svg');
+        position: absolute;
+        width: 74px;
+        height: 74px;
+        margin: 7px 0 0 8px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: heartBeat 2s 2;
     }
 }
 .mercado {

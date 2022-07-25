@@ -1,8 +1,8 @@
 .footer {
-    background-color: #221f1f;
+    background-color: $footerColor;
     color: #ddd1dd;
     padding: 50px 20px;
-    margin-top: 30px;
+    margin-top: 1.5rem;
 
     @mixin grid( $columnas, $espacio) {
         display: grid;
@@ -36,7 +36,7 @@
                 font-size: 1.3em;
             
                 &:hover {
-                    color: $terciaryColor;
+                    color: $secundaryColor;
                 }
             }
         }
@@ -46,7 +46,7 @@
         height: 260px;
         margin-top: 10px;
     }
-      
+    
     .oca {
         margin-top: 20px;
     }
