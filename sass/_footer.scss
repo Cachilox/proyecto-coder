@@ -4,7 +4,7 @@
     padding: 50px 20px;
     margin-top: 1.5rem;
 
-    @mixin grid( $columnas, $espacio) {
+    @mixin grid($columnas, $espacio) {
         display: grid;
         grid-template-columns: repeat( $columnas, 1fr);
         gap: $espacio;
@@ -20,7 +20,7 @@
     }
 
     &__grid {
-        @include grid(4, 5em );
+        @include grid(4, 5em);
     
         &-list {
             margin-top: 20px;

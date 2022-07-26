@@ -91,7 +91,7 @@ span {
   height: auto; }
   .slide img {
     width: 100%;
-    width: auto; }
+    height: 100%; }
 
 .card-title {
   color: #111;
