@@ -1,0 +1,151 @@
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+    font-size: 1em;
+    a {
+        text-decoration: none;
+        color: #f5f5dc;
+    }
+}
+.wrapper__card {
+    .card {
+        &:hover {
+            transform: none;
+        }
+    }
+}
+.cards {
+    background-color: beige;
+    height: 540px;
+    .card-title {
+        padding-top: 1rem;
+    }
+    &__price {
+        text-align: left;
+        margin: 1rem 0 0 1rem;
+        text-decoration: line-through;
+        color: $pricecolor;
+    }
+    &__cost {
+        text-align: left;
+        margin: 0 0 0 1rem;
+        font-size: 2em;
+    }
+    &__discount {
+        font-size: 1.2em;
+        margin: 0 1rem;
+        letter-spacing: 2px;
+    }
+    &__promo {
+        text-align: left;
+        margin: 0.8rem 1rem;
+        color: rgb(61, 55, 55);
+    }
+    &__credit {
+        font-size: 1.2em;
+    }
+    &__btn {
+        display: block;
+        margin: 2rem auto;
+        color: $whiteColor;
+        text-transform: uppercase;
+        background-color: #161414f3;
+        padding: .9rem 3.5rem;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-bottom: 4px solid $primaryColor;
+        transition: background-color 0.4s;
+
+        &:hover {
+            background-color: $primaryColor;
+        }
+    }
+    &__local {
+        font-size: 0.9em;
+    }
+    .bi-shop {
+        margin: 0 .9rem;
+    }
+}
+.products {
+
+    &__title {
+        font-size: 2.2em;
+    }
+}
+.divisor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+    }
+    .breadcrumb {
+        font-size: 1.3em;
+    }
+    .top {
+        height: 560px;
+    }
+    .cards {
+        background-color: beige;
+        height: 560px;
+        border-radius: 5px;
+
+        .card-title {
+            font-size: 2.2em;
+        }
+        &__price {
+            font-size: 1.5em;
+        }
+        &__cost {
+            font-size: 2.5em;
+        }
+        &__discount {
+            font-size: 1.4em;
+        }
+        &__promo {
+            text-align: left;
+            margin: 0.3em 1rem;
+            color: rgb(61, 55, 55);
+            font-size: 1.2em;
+        }
+        &__btn {
+            margin: 1.5rem auto;
+            padding: .9rem 3.5rem;
+            font-size: 1.2em;
+        }
+        &__local {
+            font-size: 1em;
+        }
+    }
+    .products {
+        margin-top: 3rem;
+    }
+    .divisor {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;   
+    }
+    .effect {
+        flex: 1;
+    }
+}
+@media (min-width: 1200px) {
+    .cards__btn {
+        margin: 2.5rem auto;
+        padding: 1.2rem 3.5rem;
+        font-size: 1.2em;
+    }
+    .pantalon {
+        height: 350px;
+    }
+}

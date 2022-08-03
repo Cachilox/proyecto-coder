@@ -5,7 +5,8 @@
     transition: transform 0.4s;
     cursor: pointer;
     box-shadow: $Boxshadow;
-    
+    overflow: hidden;
+
     &:hover {
         transform: translateY(-15px);
     }
